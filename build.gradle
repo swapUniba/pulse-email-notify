@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'maven'
+}
+
+sourceCompatibility = 1.8
+
+group = 'com.github.swapUniba'
+version = '0.0.1'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    compile 'com.github.swapUniba:pulse:0.0.3'
+    compile 'com.github.swapUniba:crowd-pulse-data-java:0.0.1'
+    compile group: 'org.apache.commons', name: 'commons-email', version: '1.4'
+}
