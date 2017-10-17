@@ -15,8 +15,12 @@ repositories {
     }
 }
 
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
-    compile 'com.github.swapUniba:pulse:0.0.3'
-    compile 'com.github.swapUniba:crowd-pulse-data-java:0.0.1'
+    compile 'com.github.swapUniba:pulse:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-data-java:master-SNAPSHOT'
     compile group: 'org.apache.commons', name: 'commons-email', version: '1.4'
 }
